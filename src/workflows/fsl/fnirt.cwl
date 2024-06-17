@@ -1,26 +1,27 @@
 cwlVersion: v1.0
 class: CommandLineTool
-baseCommand: bet
+baseCommand: fnirt
 hints:
   DockerRequirement:
     dockerPull: fsl/fsl:latest
 inputs:
+  config_file:
+    type: File
+    inputBinding:
+      prefix: "--config"
+      position: 1
   in_file:
     type: File
     inputBinding:
-      position: 1
-  out_file:
-    type: string
-    inputBinding:
+      prefix: "--in"
       position: 2
-  frac:
-    type: float
+  ref_file:
+    type: File
     inputBinding:
-      prefix: "-f"
+      prefix: "--ref"
       position: 3
-      default: 0.5
 outputs:
   out_file:
     type: File
     outputBinding:
-      glob: $(inputs.out_file)
+      glob: "$(inputs.in_file.nameroot)_warped"
