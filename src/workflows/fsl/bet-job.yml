@@ -1,0 +1,5 @@
+in_file:
+  class: File
+  path: /mnt/c/Users/kuna8/personal_projects/neuro_analysis_cwl/input/test1.nii
+# out_file: 'test1_brain.nii'
+frac: 0.5
