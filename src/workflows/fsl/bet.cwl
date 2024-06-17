@@ -3,7 +3,7 @@ class: CommandLineTool
 baseCommand: bet
 hints:
   DockerRequirement:
-    dockerPull: fsl/fsl:latest
+    dockerPull: brainlife/fsl
 inputs:
   in_file:
     type: File

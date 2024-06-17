@@ -3,7 +3,7 @@ class: CommandLineTool
 baseCommand: fnirt
 hints:
   DockerRequirement:
-    dockerPull: fsl/fsl:latest
+    dockerPull: brainlife/fsl
 inputs:
   config_file:
     type: File
