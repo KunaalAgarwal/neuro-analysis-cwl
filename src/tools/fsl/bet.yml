@@ -1,0 +1,4 @@
+brainImagingFile: 
+  class: File
+  path: /mnt/c/Users/kuna8/personal_projects/neuro-analysis-cwl/src/tools/fsl/test1.nii
+outputFileName: 'test.nii.gz'
