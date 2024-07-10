@@ -28,6 +28,6 @@ inputs:
 
 outputs:
   resultFile:
-    type: File
-    outputBinding:
-      glob: $(inputs.outputFileName)
+   type: File
+   outputBinding:
+      glob: $(inputs.outputFileName) 

@@ -1,0 +1,3 @@
+brainImagingFile: 
+  class: File
+  path: /mnt/c/Users/kuna8/uva_cs_code/neuro-analysis-cwl/input/sub-0050647_T1w.nii

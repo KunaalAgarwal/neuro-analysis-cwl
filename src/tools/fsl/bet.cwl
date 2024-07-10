@@ -1,6 +1,7 @@
 cwlVersion: v1.2
 class: CommandLineTool
 baseCommand: [bet]
+# Usage: bet <input> <output> [options]
 
 hints: 
   DockerRequirement: 

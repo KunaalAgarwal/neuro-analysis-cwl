@@ -1,0 +1,6 @@
+reference:
+  class: File
+  path: /mnt/c/Users/kuna8/uva_cs_code/neuro-analysis-cwl/input/100307_strc_T1w_MPR2_reorient_sformMod.nii
+brainImagingFile:
+  class: File
+  path: /mnt/c/Users/kuna8/uva_cs_code/neuro-analysis-cwl/input/100307_strc_T1w_MPR2_reorient_sformMod.nii
