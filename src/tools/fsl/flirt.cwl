@@ -1,25 +1,33 @@
-cwlVersion: v1.0
+cwlVersion: v1.2
 class: CommandLineTool
 baseCommand: flirt
+
 hints:
   DockerRequirement:
     dockerPull: brainlife/fsl
+
 inputs:
-  in_file:
+  brainImagingFile:
     type: File
     inputBinding:
       position: 1
+      prefix: "-in"
+
   reference:
     type: File
     inputBinding:
       position: 2
-  out_file:
+      prefix: "-ref"
+
+  outputFileName:
     type: string
+    default: "output.nii.gz"
     inputBinding:
-      prefix: "-out"
       position: 3
+      prefix: "-out"
+
 outputs:
-  out_file:
+  resultFile:
     type: File
     outputBinding:
-      glob: $(inputs.out_file)
+      glob: $(inputs.outputFileName)
